@@ -1,18 +1,6 @@
-# MySQL with Serverless framework + Sequelize
+# URL Shortener Service
 
-This will be a guide+boilerplate on getting started on with Serverless + MySQL with Sequelize (ORM for NodeJS)
-
-Get yourself a serverless REST API up with connected to a MySQL server in a few minutes on NodeJS.
-
-# Whats Included
-
-C- Create Documents
-
-R- Read Documents
-
-U- Update Documents
-
-D- Delete Documents
+This is a backend code for URL Shortener Service (For Test).
 
 # Guide
 

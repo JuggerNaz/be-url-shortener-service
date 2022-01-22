@@ -1,14 +1,10 @@
 'use strict';
-var team = require("./ops/team");
+var url = require("./ops/url");
 
-module.exports.teamsAll = (event, context, callback) => {
-  team.getAll(event, context, callback);
-};
+module.exports.createUrl = (event, context, callback) => {
+  url.create(event, context, callback )
+}
 
-module.exports.createTeam = (event, context, callback) => {
-  team.create(event, context, callback )
-};
-
-module.exports.updateTeam = (event, context, callback) => {
-  team.update(event, context, callback )
+module.exports.getUrl = (event, context, callback) => {
+  url.get(event, context, callback)
 }

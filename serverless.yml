@@ -1,23 +1,28 @@
-service: sls-boilerplate-sequilize
+service: url-shortener-service
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs12.x
+  region: ap-southeast-1
+  stackName: url-shortener-stack
+  apiName: url-shortener-api
+  lambdaHashingVersion: 20201221
+  apiGateway:
+    shouldStartNameWithService: true
 
 functions:
-  teamsAll:
-    handler: handler.teamsAll
+  createUrl:
+    handler: handler.createUrl
     events:
     - http:
-        path: teams
-        method: get
-  createTeam:
-    handler: handler.createTeam
-    events:
-    - http:
-        path: teams
+        path: url
         method: post
-
+  getUrl:
+    handler: handler.getUrl
+    events:
+    - http:
+        path: get/{hashcode}
+        method: get
 
 plugins:
   - serverless-offline
