@@ -19,6 +19,7 @@ functions:
     - http:
         path: url
         method: post
+        cors: true
   getUrl:
     handler: handler.getUrl
     events:
