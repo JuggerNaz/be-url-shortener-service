@@ -2,7 +2,7 @@ const sequelize = require('../lib/database.js')
 const Sequelize = require('sequelize')
 const hash = require('hash-it');
 
-const Url = require("../models/Url.js")(sequelize, Sequelize)
+const Url = require("../models/url.js")(sequelize, Sequelize)
 
 Url.sync()
 
