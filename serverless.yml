@@ -3,6 +3,8 @@ service: url-shortener-service
 provider:
   name: aws
   runtime: nodejs12.x
+  stage: dev
+  profile: nazrulmuhaimin
   region: ap-southeast-1
   stackName: url-shortener-stack
   apiName: url-shortener-api
